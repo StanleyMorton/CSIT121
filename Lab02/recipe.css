@@ -1,0 +1,39 @@
+/* Styles for the body element */
+body {
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: Arial, sans-serif; /* Font family */
+    color: #333; /* Dark text color */
+}
+
+/* Styles for headings */
+h1 {
+    color: #ff5733; /* Reddish heading color */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+h2 {
+    color: #007acc; /* Blueish heading color */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+/* Styles for paragraphs */
+p {
+    margin: 10px 0; /* Adds margin space around paragraphs */
+}
+
+/* Styles for list items */
+li {
+    margin-left: 20px; /* Adds left margin for list items */
+}
+
+/* Additional styling for links */
+a {
+    color: #009900; /* Green link color */
+    text-decoration: none; /* Removes underline */
+}
+
+/* Styles for a hover effect on links */
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #006600; /* Darker green on hover */
+}
