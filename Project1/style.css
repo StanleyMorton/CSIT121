@@ -1,0 +1,44 @@
+/* styles.css */
+
+body {
+    background-image: url('images/background.jpg'); /* Use 'background.jpg' as the image file name */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #333; /* Dark gray background color */
+    color: #FFD700; /* Gold text color */
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FF69B4; /* Hot pink link color */
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+h1, h2, p {
+    color: #4169E1; /* Royal blue text color */
+}
+
+/* Add any additional styles you need for your specific design */
