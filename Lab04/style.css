@@ -1,0 +1,22 @@
+.container {
+  width: 80%;
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.recipe-images {
+  display: flex; /* Display child elements side by side */
+  justify-content: space-between; /* Add space between the two elements */
+}
+
+a:link {
+  color: blue; /* Link color for unvisited links */
+  text-decoration: none; /* Remove underline */
+}
+
+a:visited {
+  color: purple; /* Link color for visited links */
+}
+
+a:hover {
+  color: red; /* Link color on hover */
+}
