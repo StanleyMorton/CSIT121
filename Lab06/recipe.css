@@ -1,64 +1,101 @@
-.container {
-  width: 80%;
-  margin: 0 auto;
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    color: #333;
+
+h1 {
+    color: #ff5733;
+    text-transform: uppercase;
 }
 
-.recipe-images {
-  display: flex;
-  justify-content: space-between;
+h2 {
+    color: #007acc;
+    text-transform: uppercase;
 }
 
-a:link {
-  color: blue;
-  text-decoration: none;
+/* Styles for paragraphs */
+p {
+    margin: 10px 0;
 }
 
-a:visited {
-  color: purple;
+
+li {
+    margin-left: 20px;
 }
+
+
+a {
+    color: #009900;
+    text-decoration: none;
+}
+
 
 a:hover {
-  color: red;
+    text-decoration: underline;
+    color: #006600;
 }
 
-body {
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
-  color: #333;
+
+.recipe-image {
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 10px;
 }
 
 .recipe-image-top {
-  background-image: url('images/Top image.jpg');
-  background-size: cover;
+    background-image: url('images/top image.jpg');
+    background-size: cover;
 }
 
 .recipe-image-bottom {
-  background-image: url('images/bottom image.jpg');
-  background-size: cover;
+    background-image: url('images/bottom image.jpg');
+    background-size: cover;
 }
 
-ul.ingredient-block {
-  float: left;
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.recipe-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-image-top {
+    flex: 1;
+    background-image: url('images/top image.jpg');
+    background-size: cover;
+}
+
+.recipe-image-bottom {
+    flex: 1;
+    background-image: url('images/bottom image.jpg');
+    background-size: cover;
+}
+
+.recipe-text {
+    flex: 1;
+    padding: 20px;
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-  }
+    .container {
+        flex-direction: column;
+    }
 
-  .recipe-images {
-    flex-direction: column;
-    justify-content: center;
-  }
+    .recipe-images {
+        width: 100%;
+    }
 
-  a:link,
-  a:visited,
-  a:hover {
-    font-size: 16px;
-  }
+    .recipe-image-top,
+    .recipe-image-bottom {
+        flex: 1;
+    }
+}
 
-  body {
-    background-color: #f5f5f5;
-    font-family: Helvetica, Arial, sans-serif;
-    color: #444;
-  }
