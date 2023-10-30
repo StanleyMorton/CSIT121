@@ -1,8 +1,11 @@
+/* Styles for the body element */
 body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
     color: #333;
+}
 
+/* Styles for headings */
 h1 {
     color: #ff5733;
     text-transform: uppercase;
@@ -18,24 +21,24 @@ p {
     margin: 10px 0;
 }
 
-
+/* Styles for list items */
 li {
     margin-left: 20px;
 }
 
-
+/* Additional styling for links */
 a {
     color: #009900;
     text-decoration: none;
 }
 
-
+/* Styles for a hover effect on links */
 a:hover {
     text-decoration: underline;
     color: #006600;
 }
 
-
+/* Styles for the recipe images */
 .recipe-image {
     width: 200px;
     height: 200px;
@@ -44,58 +47,32 @@ a:hover {
     margin: 10px;
 }
 
+/* Additional styling for the top image */
 .recipe-image-top {
     background-image: url('images/top image.jpg');
     background-size: cover;
+    float: left;
 }
 
+/* Additional styling for the bottom image */
 .recipe-image-bottom {
     background-image: url('images/bottom image.jpg');
     background-size: cover;
+    clear: both; /* Clear the float to stack the bottom image below the top image */
 }
 
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-}
-
-.recipe-images {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.recipe-image-top {
-    flex: 1;
-    background-image: url('images/top image.jpg');
-    background-size: cover;
-}
-
-.recipe-image-bottom {
-    flex: 1;
-    background-image: url('images/bottom image.jpg');
-    background-size: cover;
-}
-
+/* Additional styling for the recipe text */
 .recipe-text {
-    flex: 1;
-    padding: 20px;
+    margin-left: 220px; /* Adjust margin to create space to the right of the top image */
 }
 
+/* Additions for responsive layout */
 @media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .recipe-images {
-        width: 100%;
-    }
-
     .recipe-image-top,
-    .recipe-image-bottom {
-        flex: 1;
+    .recipe-image-bottom,
+    .recipe-text {
+        float: none; /* Clear floats for mobile view */
+        clear: none;
+        margin-left: 0; /* Remove margin for mobile view */
     }
 }
-
